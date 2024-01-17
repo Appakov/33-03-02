@@ -31,7 +31,7 @@ const tabContents = document.querySelectorAll('.tab_content_block');
 const tabItems = document.querySelectorAll('.tab_content_item');
 const tabParents = document.querySelector('.tab_content_items');
 
-let currentTabIndex = 0; // начинаем с первой вкладки
+let currentTabIndex = 0; 
 
 const hideTabContent = () => {
     tabContents.forEach((tabBlock) => {
@@ -62,7 +62,7 @@ tabParents.onclick = (event) => {
     if (event.target.classList.contains('tab_content_item')) {
         tabItems.forEach((tabItem, tabIndex) => {
             if (event.target === tabItem) {
-                currentTabIndex = tabIndex; // установка индекса выбранной вкладки
+                currentTabIndex = tabIndex; 
                 hideTabContent();
                 showTabContent(currentTabIndex);
             }
