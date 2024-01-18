@@ -31,7 +31,7 @@ const tabContents = document.querySelectorAll('.tab_content_block');
 const tabItems = document.querySelectorAll('.tab_content_item');
 const tabParents = document.querySelector('.tab_content_items');
 
-let currentTabIndex = 0; 
+let currentTabIndex = 4; 
 
 const hideTabContent = () => {
     tabContents.forEach((tabBlock) => {
